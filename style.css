@@ -239,6 +239,7 @@ h3 {
 .site-text-grid p {
   max-width: 540px;
   font-size: 17px;
+  margin-bottom: 42px;
 }
 
 .protocol-comparison {
