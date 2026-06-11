@@ -197,15 +197,18 @@ h3 {
   object-fit: cover;
 }
 
+/* INTRO VIDEO - final2.mp4는 16:9 */
+
 .intro-video {
-  margin-top: 72px;
+  max-width: 960px;
+  margin: 72px auto 0;
   padding-top: 38px;
   border-top: 1px solid var(--line);
 }
 
 .intro-video video {
-  max-height: 760px;
-  object-fit: contain;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 /* SITE + PROTOCOL */
@@ -430,7 +433,7 @@ h3 {
   line-height: 1 !important;
 }
 
-/* VIDEO GALLERY */
+/* VIDEO GALLERY - observation1~8.mp4는 1:1 */
 
 .video-gallery {
   display: grid;
@@ -445,7 +448,7 @@ h3 {
 }
 
 .video-card video {
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
@@ -541,7 +544,13 @@ h3 {
   }
 
   .intro-video {
+    max-width: 100%;
     margin-top: 54px;
+  }
+
+  .intro-video video {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   .site-text-grid {
@@ -578,6 +587,7 @@ h3 {
   }
 
   .video-card video {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 }
